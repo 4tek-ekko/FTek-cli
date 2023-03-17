@@ -148,7 +148,7 @@ function commandInfo(categoryInfo, dir, commandFile) {
 
 function usage(commandInfo) {
   const lines = [];
-  let currentLine = `    appcenter ${commandInfo.category.name} ${commandInfo.commandName}`;
+  let currentLine = `    ftek ${commandInfo.category.name} ${commandInfo.commandName}`;
 
   const maxWidth = 120;
   const rightMargin = 4;

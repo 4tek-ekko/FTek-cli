@@ -33,6 +33,10 @@ gulp.task("copy-assets", function () {
   return gulp.src("src/**/*.txt").pipe(gulp.dest("dist"));
 });
 
+gulp.task("copy-assets", function () {
+  return gulp.src("src/**/launchServer.*").pipe(gulp.dest("dist"));
+});
+
 gulp.task("copy-generated-client", function () {
   return gulp.src("src/util/apis/generated/**/*.[tj]s").pipe(gulp.dest("dist/util/apis/generated"));
 });
